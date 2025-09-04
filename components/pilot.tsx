@@ -6,19 +6,19 @@ import MockupImage from "./fixesMockup"
 
 export default function Pilot() {
   return (
-    <section id="pilot" className="section">
+    <section id="solution" className="section">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 px-4 md:grid-cols-2">
         <Reveal>
        <div className="md:py-10">
-  <h2 className="text-2xl md:text-4xl font-heading font-semibold tracking-tight text-brand ">
+  <h2 className="text-2xl md:text-4xl font-heading font-bold tracking-tight text-[#204060] ">
     OncoVault Fixes This
   </h2>
   <p className="mt-4 text-[color:var(--dark)]/80 leading-relaxed">
     We transform scattered medical files into a unified, chronological timeline—
     <br className="hidden md:block" />
     so patients and doctors can track every step with{" "}
-    <span className="font-bold text-brand">clarity</span> and{" "}
-    <span className="font-bold text-brand">confidence</span>.
+    <span className="font-bold text-[#204060]">clarity</span> and{" "}
+    <span className="font-bold text-[#204060]">confidence</span>.
   </p>
   <ul className="mt-6 space-y-4">
     <li className="flex items-start gap-3">
@@ -26,7 +26,7 @@ export default function Pilot() {
         <Layers className="h-5 w-5 text-blue-500" aria-hidden />
       </div>
       <div>
-        <span className="font-semibold text-brand">Auto-Classification:</span>{" "}
+        <span className="font-semibold text-[#204060]">Auto-Classification:</span>{" "}
         Instantly recognizes scans, labs, and prescriptions.
       </div>
     </li>
@@ -35,7 +35,7 @@ export default function Pilot() {
         <Clock className="h-5 w-5 text-yellow-500" aria-hidden />
       </div>
       <div>
-        <span className="font-semibold text-brand">Smart Timelines:</span>{" "}
+        <span className="font-semibold text-[#204060]">Smart Timelines:</span>{" "}
         Automatically arranges reports by date.
       </div>
     </li>
@@ -44,7 +44,7 @@ export default function Pilot() {
         <Cloud className="h-5 w-5 text-purple-500" aria-hidden />
       </div>
       <div>
-        <span className="font-semibold text-brand">Always Accessible:</span>{" "}
+        <span className="font-semibold text-[#204060]">Always Accessible:</span>{" "}
         Every report stored securely in one place.
       </div>
     </li>
@@ -53,7 +53,7 @@ export default function Pilot() {
         <Smartphone className="h-5 w-5 text-green-500" aria-hidden />
       </div>
       <div>
-        <span className="font-semibold text-brand">Clarity for Decisions:</span>{" "}
+        <span className="font-semibold text-[#204060]">Clarity for Decisions:</span>{" "}
         Faster insights for better care.
       </div>
     </li>

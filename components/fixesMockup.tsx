@@ -32,8 +32,8 @@ export default function FixesMockup() {
   const [hovered, setHovered] = useState<number | null>(null)
   const isMobile = typeof window !== "undefined" && window.innerWidth < 640
   const phonePositions = isMobile ? phonePositionsMobile : phonePositionsDesktop
-  const phoneWidth = isMobile ? 80 : 150
-  const phoneHeight = isMobile ? 160 : 300
+  const phoneWidth = isMobile ? 70 : 150
+  const phoneHeight = isMobile ? 180 : 300
 
   return (
     <aside className="relative w-full max-w-4xl mx-auto aspect-[4/4] bg-gradient-to-br from-[#25304a] via-[#2e3a5c] to-[#25304a] rounded-2xl overflow-hidden flex items-center justify-center">

@@ -40,7 +40,7 @@ export default function HeroMockup() {
   );
 
   return (
-    <div className="relative flex items-center justify-center shadow-lg rounded-xl p-6 min-h-[400px] md:min-h-[480px] overflow-hidden bg-brand">
+    <div className="relative flex items-center justify-center shadow-lg rounded-xl p-6 min-h-[350px] md:min-h-[440px] overflow-hidden bg-brand">
       {/* Carousel screens */}
       <div
         className="flex gap-6"

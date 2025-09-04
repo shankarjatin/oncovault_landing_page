@@ -34,11 +34,11 @@ export default function Problem() {
       <div className="mx-auto max-w-6xl px-4 flex flex-col items-center">
         <Reveal>
           <div className="max-w-3xl text-center mx-auto">
-            <h2 className="text-2xl md:text-4xl font-heading font-semibold tracking-tight text-brand">
+            <h2 className="text-2xl md:text-4xl font-heading font-bold tracking-tight text-[#204060]">
               Cancer Report Management Today is Broken
             </h2>
             <p className="mt-4 text-[color:var(--dark)]/80 leading-relaxed">
-              <span className="font-bold text-brand">Patients</span> and <span className="font-bold text-brand">doctors</span> are slowed down by <span className="font-bold">scattered files</span>, misplaced reports, and manual tracking.<br />
+              <span className="font-bold text-[#204060]">Patients</span> and <span className="font-bold text-[#204060]">doctors</span> are slowed down by <span className="font-bold">scattered files</span>, misplaced reports, and manual tracking.<br />
               This creates <span className="font-bold text-pink-600">delays</span>, <span className="font-bold text-yellow-600">stress</span>, and <span className="font-bold text-blue-600">confusion</span> in an already difficult journey.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Problem() {
                 <div className={`rounded-full p-4 mb-2 shadow-sm ${iconColor}`}>
                   <Icon className="h-8 w-8" aria-hidden />
                 </div>
-                <h3 className="text-base md:text-lg font-heading font-bold text-brand text-center mb-2">{title}</h3>
+                <h3 className="text-base md:text-lg font-heading font-bold text-[#204060] text-center mb-2">{title}</h3>
                 <p className="text-xs md:text-sm text-[color:var(--dark)]/75 leading-relaxed text-center">{desc}</p>
               </div>
             </Reveal>

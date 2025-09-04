@@ -13,7 +13,7 @@ export default function Hero() {
               <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
               <span className="text-xs font-medium text-accent">Healthcare AI • Patient‑first</span>
             </div>
-            <h1 className="text-pretty text-3xl md:text-5xl font-heading font-bold tracking-tight text-brand">
+            <h1 className="text-pretty text-3xl md:text-4xl font-heading font-bold tracking-tight text-[#204060]">
               We make cancer treatment journey simple, organized, and intelligent.
             </h1>
             <p className="text-base md:text-lg text-[color:var(--dark)]/80 leading-relaxed">
