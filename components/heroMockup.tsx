@@ -2,20 +2,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-import heromockup1 from '../public/mackuo2.png'
-import heromockup2 from '../public/mackup2.png'
-import heromockup3 from '../public/mackup3.png'
-import heromockup4 from "../public/mackup4.png"
-import heromockup5 from "../public/mackup5.png"
-import heromockup6 from "../public/mackup6.png"
-
+// Use string paths for public images for instant load
 const mockupSources = [
-heromockup1,
-heromockup2,
-heromockup3,
-heromockup4,
-heromockup5,
-heromockup6
+  "/mackuo2.png",
+  "/mackup2.png",
+  "/mackup3.png",
+  "/mackup4.png",
+  "/mackup5.png",
+  "/mackup6.png"
 ];
 
 const VISIBLE_COUNT = 3;
@@ -71,8 +65,8 @@ export default function HeroMockup() {
               width={220}
               height={440}
               className="object-contain rounded-2xl"
-              priority={idx === 1}
-              unoptimized
+              priority // Always prioritize for instant load
+              unoptimized // Prevent Next.js from optimizing (faster for local/public images)
             />
           </div>
         ))}

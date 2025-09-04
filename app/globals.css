@@ -215,7 +215,7 @@ html {
 /* Section spacing + anchor offset for fixed nav */
 .section {
   /* a bit more breathing room */
-  @apply py-20 md:py-28;
+  @apply py-12 md:py-20;
   scroll-margin-top: 84px;
 }
 
