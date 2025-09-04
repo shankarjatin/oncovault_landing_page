@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -24,8 +25,15 @@ export default function Nav() {
       className={`fixed inset-x-0 top-0 z-50 transition-all ${scrolled ? "bg-white/90 backdrop-blur border-b border-[color:var(--dark)]/5" : "bg-white"}`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="#home" className="flex items-center gap-2" aria-label="OncoVault Home">
-          <div className="h-8 w-8 rounded-md bg-brand" aria-hidden />
+  <Link href="#home" className="flex items-center gap-2" aria-label="OncoVault Home">
+          <Image
+            src="/oncovault-logo.svg"
+            alt="OncoVault Logo"
+            width={32}
+            height={32}
+            className="rounded-md"
+            priority
+          />
           <span className="font-heading font-semibold tracking-tight text-lg text-brand">OncoVault</span>
         </Link>
         <ul className="hidden md:flex items-center gap-6">

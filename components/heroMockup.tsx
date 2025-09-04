@@ -46,7 +46,7 @@ export default function HeroMockup() {
   );
 
   return (
-    <div className="relative flex items-center justify-center shadow-lg rounded-xl p-6 min-h-[400px] md:min-h-[480px] overflow-hidden bg-white">
+    <div className="relative flex items-center justify-center shadow-lg rounded-xl p-6 min-h-[400px] md:min-h-[480px] overflow-hidden bg-brand">
       {/* Carousel screens */}
       <div
         className="flex gap-6"
@@ -58,7 +58,7 @@ export default function HeroMockup() {
         {visibleImages.map((src, idx) => (
           <div
             key={`${src}-${idx}-${startIdx}`}
-            className={`flex items-center justify-center w-52 h-[400px] md:w-60 md:h-[440px] rounded-3xl shadow-xl border border-neutral-200 bg-white
+            className={`flex items-center justify-center w-52 h-[440px] md:w-60 md:h-[480px] rounded-3xl shadow-xl border border-neutral-200 bg-white
               ${idx === 1 ? "scale-105 z-10 shadow-2xl border-brand" : "opacity-80"}
             `}
             style={{
