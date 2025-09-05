@@ -37,7 +37,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --brand: #0f359f; /* Primary deep blue */
+  --white: #ffffff; /* White */
+  --brand: #2354e8; /* Primary deep blue */
   --white: #ffffff; /* White */
   --dark: #111827; /* Dark text */
 }
@@ -154,7 +155,7 @@ html {
 
 /* Buttons */
 .btn {
-  @apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 shadow-sm;
+  @apply inline-flex items-center justify-center px-5 py-3 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 shadow-sm;
   transition: transform .18s ease, box-shadow .2s ease;
 }
 .btn-brand {
@@ -215,7 +216,7 @@ html {
 /* Section spacing + anchor offset for fixed nav */
 .section {
   /* a bit more breathing room */
-  @apply py-12 md:py-20;
+  @apply py-4 md:py-8;
   scroll-margin-top: 84px;
 }
 

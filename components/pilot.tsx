@@ -3,6 +3,7 @@
 import Reveal from "./reveal"
 import { Layers, Clock, Cloud, Smartphone, ArrowRight } from "lucide-react"
 import MockupImage from "./fixesMockup"
+import FixesMockup from "./fixesMockup"
 
 export default function Pilot() {
   return (
@@ -14,7 +15,7 @@ export default function Pilot() {
     OncoVault Fixes This
   </h2>
   <p className="mt-4 text-[color:var(--dark)]/80 leading-relaxed">
-    We transform scattered medical files into a unified, chronological timeline—
+    We transform scattered medical files into a unified, chronological timeline,
     <br className="hidden md:block" />
     so patients and doctors can track every step with{" "}
     <span className="font-bold text-[#204060]">clarity</span> and{" "}
@@ -23,7 +24,7 @@ export default function Pilot() {
   <ul className="mt-6 space-y-4">
     <li className="flex items-start gap-3">
       <div className="rounded-md bg-blue-100 p-2 mt-1">
-        <Layers className="h-5 w-5 text-blue-500" aria-hidden />
+        <Layers className="h-5 w-5 text-brand" aria-hidden />
       </div>
       <div>
         <span className="font-semibold text-[#204060]">Auto-Classification:</span>{" "}
@@ -31,8 +32,8 @@ export default function Pilot() {
       </div>
     </li>
     <li className="flex items-start gap-3">
-      <div className="rounded-md bg-yellow-100 p-2 mt-1">
-        <Clock className="h-5 w-5 text-yellow-500" aria-hidden />
+      <div className="rounded-md bg-blue-100 p-2 mt-1">
+        <Clock className="h-5 w-5 text-brand" aria-hidden />
       </div>
       <div>
         <span className="font-semibold text-[#204060]">Smart Timelines:</span>{" "}
@@ -40,8 +41,8 @@ export default function Pilot() {
       </div>
     </li>
     <li className="flex items-start gap-3">
-      <div className="rounded-md bg-purple-100 p-2 mt-1">
-        <Cloud className="h-5 w-5 text-purple-500" aria-hidden />
+      <div className="rounded-md bg-blue-100 p-2 mt-1">
+        <Cloud className="h-5 w-5 text-brand" aria-hidden />
       </div>
       <div>
         <span className="font-semibold text-[#204060]">Always Accessible:</span>{" "}
@@ -49,8 +50,8 @@ export default function Pilot() {
       </div>
     </li>
     <li className="flex items-start gap-3">
-      <div className="rounded-md bg-green-100 p-2 mt-1">
-        <Smartphone className="h-5 w-5 text-green-500" aria-hidden />
+      <div className="rounded-md bg-blue-100 p-2 mt-1">
+        <Smartphone className="h-5 w-5 text-brand" aria-hidden />
       </div>
       <div>
         <span className="font-semibold text-[#204060]">Clarity for Decisions:</span>{" "}
@@ -63,15 +64,15 @@ export default function Pilot() {
   <div className="mt-5 w-full">
     <a
       href="#"
-      className="group flex items-center justify-between bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-200 rounded-xl px-6 py-5 shadow-sm hover:shadow-md transition-all"
+      className="group flex items-center justify-between bg-blue-50 border border-blue-200 rounded-xl px-6 py-5 shadow-sm hover:shadow-md transition-all"
     >
       <div>
-        <p className="text-lg font-semibold text-yellow-800">Download the App</p>
-        <p className="text-sm text-yellow-700/80">
-          Get OncoVault on your mobile → 
+        <p className="text-lg font-semibold text-brand">Download the App</p>
+        <p className="text-sm text-blue-700/80">
+        and make smarter decisions
         </p>
       </div>
-      <ArrowRight className="h-6 w-6 text-yellow-600 group-hover:translate-x-1 transition-transform" />
+      <ArrowRight className="h-6 w-6 text-brand group-hover:translate-x-1 transition-transform" />
     </a>
   </div>
 </div>
@@ -79,7 +80,7 @@ export default function Pilot() {
         </Reveal>
 
         <Reveal delay={100}>
-          <MockupImage />
+         <FixesMockup />
         </Reveal>
       </div>
     </section>

@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${montserrat.variable} antialiased`}>
     <body className="font-sans bg-white text-[color:var(--dark)]">
         <Nav />
-        <main className="min-h-[calc(100vh-180px)] pt-12 pb-16">
+        <main className="min-h-[calc(100vh-180px)] pt-12 pb-2">
           {children}
         </main>
         <Footer />
