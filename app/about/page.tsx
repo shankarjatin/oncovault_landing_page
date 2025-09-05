@@ -1,12 +1,14 @@
 "use client"
 
+import ContactUs from "@/components/contactus"
 import TeamCard from "@/components/teamCard"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 const team = [
     {
     name: "Dr Nitesh Rohatagi",
-    image: "/drnitesh.jpg",
+    image: "/drniteshdp.jpg",
     alt: "dr-nitesh-rohatagi",
     role: "Medical Oncologist",
     designation: "Lead: Healthtech Innovation",
@@ -46,21 +48,21 @@ const team = [
 export default function About() {
   return (
    // ...existing code...
-    <section className="max-w-6xl mx-auto px-2 py-8 sm:px-6 sm:py-16">
+    <section className="max-w-6xl mx-2 px-2 py-8 sm:px-6 sm:py-16">
       {/* About OncoVault Section */}
      
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 items-center mb-12">
     {/* Left: About Us Content */}
     <div>
-      <h1 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#204060] mb-4 tracking-tight">
-        About <span className="text-[#0F359F]">OncoVault</span>
+      <h1 className="text-xl md:text-3xl sm:text-4xl font-heading font-extrabold text-[#204060] mb-2 mt-2 md:mt-4 md:mb-4 tracking-tight">
+        About <span className="text-brand">OncoVault</span>
       </h1>
-       <p className="text-lg sm:text-xl text-gray-700 mb-4 text-justify">
+       <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
         Navigating cancer treatment can be overwhelming. Multiple reports, consultations, and updates often create confusion and stress
       At OncoVault, we believe managing cancer care should be simple, organized, and patient-centric. Our platform enables patients and caregivers to seamlessly <span className="font-semibold text-[#204060]">store, track, and understand</span> all medical reports in one secure place.
       </p>
-       <p className="text-lg sm:text-xl text-gray-700 mb-4 text-justify">
-        Our mission is to transform medical data into <span className="font-semibold text-[#0F359F]">actionable insights</span>, paving the way for a healthier future for generations to come.
+       <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
+        Our mission is to transform medical data into <span className="font-semibold text-brand">actionable insights</span>, paving the way for a healthier future for generations to come.
        </p>
      
     </div>
@@ -79,13 +81,13 @@ export default function About() {
   </div>
       {/* Team Section */}
 <div className="mb-10 text-center">
-  <h2 className="text-2xl sm:text-3xl font-extrabold text-[#204060] tracking-tight leading-tight">
+  <h2 className="text-lg md:text-2xl sm:text-3xl font-extrabold text-[#204060] tracking-tight leading-tight">
     Team Who Truly Understands Cancer Journey
    
   </h2>
-  <div className="mx-auto mt-3 w-32 h-1 bg-[#0F359F] rounded-full"></div>
+  <div className="mx-auto mt-3 w-32 h-1 bg-brand rounded-full"></div>
 </div>
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+<div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
   {team.map((member) => (
     <TeamCard
       key={member.name}
@@ -98,8 +100,21 @@ export default function About() {
     />
   ))}
 </div>
-
-
+  <div className="mt-5 w-full">
+              <a
+                href="#"
+                className="group flex items-center justify-between bg-blue-50 border border-blue-200 rounded-xl px-6 py-2 md:py-5 shadow-sm hover:shadow-md transition-all"
+              >
+                <div>
+                  <p className="text-md md:text-lg font-semibold text-brand">Download the App</p>
+                  <p className="text-xs md:text-sm text-blue-700/80">
+                   and organise reports in one secure app.
+                  </p>
+                </div>
+                <ArrowRight className="h-6 w-6 text-brand group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+<ContactUs />
     </section>
 // ...existing code...
   )
