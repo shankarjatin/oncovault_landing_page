@@ -48,7 +48,7 @@ const team = [
 export default function About() {
   return (
    // ...existing code...
-    <section className="max-w-6xl mx-2 px-2 py-8 sm:px-6 sm:py-16">
+    <section className="max-w-6xl mx-2 md:mx-auto px-2 py-8 sm:px-6 sm:py-16">
       {/* About OncoVault Section */}
      
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 items-center mb-12">
