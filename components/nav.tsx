@@ -3,19 +3,31 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 
 const links = [
   { href: "#home", label: "Home" },
   { href: "#problem", label: "Problem" },
   { href: "#solution", label: "Solution" },
   { href: "/about", label: "About Us" },
-  
 ]
 
-// ...existing code...
+// Helper to get correct href for anchor links (same logic as footer)
+function getNavHref(href: string, pathname: string) {
+  if (href.startsWith("#")) {
+    if (pathname !== "/") {
+      return `/${href}`
+    }
+    return href
+  }
+  return href
+}
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
     onScroll()
@@ -43,7 +55,7 @@ export default function Nav() {
           {links.map((l) => (
             <li key={l.href}>
               <a
-                href={l.href}
+                href={getNavHref(l.href, pathname)}
                 className="link-underline text-md font-semibold text-[color:var(--dark)]/80 hover:text-brand transition-colors"
               >
                 {l.label}
@@ -51,9 +63,9 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-      <a href="#download" className="hidden md:block btn btn-brand rounded-full">
-  Download the App
-</a>
+        <a href="#download" className="hidden md:block btn btn-brand rounded-full">
+          Download the App
+        </a>
         {/* Hamburger for mobile */}
         <button
           className="md:hidden ml-2 p-2 rounded-full border border-gray-200 bg-white"
@@ -70,30 +82,29 @@ export default function Nav() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t z-40">
-         <ul className="flex flex-col items-start ml-4 py-6">
-  {links.map((l, idx) => (
-    <li
-      key={l.href}
-      className={idx === links.length - 1 ? "mb-4" : idx === links.length - 2 ? "mb-2" : "mb-2"}
-    >
-      <a
-        href={l.href}
-        className="text-lg font-semibold text-[color:var(--dark)]/90 hover:text-brand transition-colors"
-        onClick={() => setMenuOpen(false)}
-      >
-        {l.label}
-      </a>
-    </li>
-  ))}
-  <li>
-    <a href="#download" className="btn btn-brand rounded-full px-4 py-2 text-sm">
-      Download the App
-    </a>
-  </li>
-</ul>
+          <ul className="flex flex-col items-start ml-4 py-6">
+            {links.map((l, idx) => (
+              <li
+                key={l.href}
+                className={idx === links.length - 1 ? "mb-4" : idx === links.length - 2 ? "mb-2" : "mb-2"}
+              >
+                <a
+                  href={getNavHref(l.href, pathname)}
+                  className="text-lg font-semibold text-[color:var(--dark)]/90 hover:text-brand transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a href="#download" className="btn btn-brand rounded-full px-4 py-2 text-sm">
+                Download the App
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </header>
   )
 }
-// ...existing code...
