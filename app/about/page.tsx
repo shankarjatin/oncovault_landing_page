@@ -28,7 +28,7 @@ const team = [
     name: "Gaurav Kumar",
     image: "gauravdp.jpg",
     alt: "gaurav-kumar",
-    role: "Software Engineer",
+    role: "Patient advocate",
     designation: "BigoHealth Cofounder & CEO",
     linkedin: "https://www.linkedin.com/in/gaurav-rajput-b14192ba/",
     type: "Founder",
@@ -37,7 +37,7 @@ const team = [
     name: "Shubham Shreyas",
     image: "https://bigohealth-images.s3.us-east-1.amazonaws.com/Website_Resources/about_us_page/shubham.jpeg",
     alt: "shubham-shreyas",
-    role: "Software Engineer",
+    role: "Patient advocate",
     designation: "Co-Founder & CTO",
     linkedin: "https://www.linkedin.com/in/shubham-shreyas-07183891/",
     type: "Founder",
@@ -58,12 +58,16 @@ export default function About() {
         About <span className="text-brand">OncoVault</span>
       </h1>
        <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
-        Navigating cancer treatment can be overwhelming. Multiple reports, consultations, and updates often create confusion and stress
-      At OncoVault, we believe managing cancer care should be simple, organized, and patient-centric. Our platform enables patients and caregivers to seamlessly <span className="font-semibold text-[#204060]">store, track, and understand</span> all medical reports in one secure place.
-      </p>
+       Navigating cancer treatment is overwhelming. Multiple reports, endless consultations, and constant updates often create confusion and stress for both patients and doctors
+We at <span className="font-semibold text-brand">The OncoVault</span> believe cancer care should be data-centric, organized, and truly patient-centric and created a secure platform where patients and doctors can seamlessly store, track, and understand all medical reports in one place.</p>
+ <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
+Having your medical data <span className="font-semibold text-brand">summarised & vaulted</span> is likely to improve oncology outcomes, empower better decisions and brings clarity when it’s needed the most.</p>
+ <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
+Our mission is to transform complex cancer data into clear,<span className="font-semibold text-brand">actionable insights</span>  that guide patients and doctors toward better outcomes and a healthier tomorrow.</p>
+      {/* </p>
        <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
         Our mission is to transform medical data into <span className="font-semibold text-brand">actionable insights</span>, paving the way for a healthier future for generations to come.
-       </p>
+       </p> */}
      
     </div>
     {/* Right: Related Image */}

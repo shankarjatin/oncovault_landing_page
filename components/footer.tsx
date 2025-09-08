@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-white/80 text-xs sm:text-sm mt-2">
-            OncoVault is dedicated to empowering cancer patients and clinicians with secure, organized, and accessible medical records. Our mission is clarity and confidence in every step of care.
+            The OncoVault is dedicated to empowering cancer patients and clinicians with secure, organized, and accessible medical records. Our mission is clarity and confidence in every step of care.
           </p>
         </div>
         {/* Navigation Links & Address side by side on mobile, columns on desktop */}
@@ -64,7 +64,7 @@ export default function Footer() {
           {/* Address */}
           <div className="flex flex-col gap-1 sm:gap-2 text-xs sm:text-base flex-1 md:items-end md:text-right">
             <span className="font-semibold text-white mb-1">Contact</span>
-            <span className="text-white/80">Innov8, D 1 Ras Vilas,</span>
+            <span className="text-white/80">Innov8, D1 Ras Vilas,</span>
             <span className="text-white/80">Lower Ground Floor, Saket</span>
             <span className="text-white/80">South Delhi - 110017</span>
           </div>

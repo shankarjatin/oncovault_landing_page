@@ -24,7 +24,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-sm md:text-lg text-[color:var(--dark)]/80 md:leading-relaxed">
-              OncoVault helps clinicians to derive real-world evidence, and speed clinical decisions without compromising on privacy or compliance.
+              The OncoVault helps clinicians to derive real-world evidence, and speed clinical decisions without compromising on privacy or compliance.
             </p>
             {/* Feature Pointers */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">

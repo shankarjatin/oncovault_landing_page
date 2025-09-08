@@ -33,11 +33,13 @@ export default function Problem() {
         <Reveal>
           <div className="max-w-3xl text-center mx-auto">
             <h2 className="text-lg md:text-4xl font-heading font-bold tracking-tight text-[#204060] display-block">
-              Cancer Report Management Today is Broken
+             Cancer Report Management System is Broken <br/> 
+             {/* <span className="test-md md:text-lg"> and Patients Pay the Price.  </span> */}
+
             </h2>
-            <p className="mt-4 text-sm md:text-lg text-[color:var(--dark)]/80 leading-relaxed text-justify">
-              Patients and doctors are slowed down by scattered files, misplaced reports, and manual tracking.
-              This creates delays, stress, and confusion in an already difficult journey.
+            <p className="mt-4 text-sm md:text-lg text-[color:var(--dark)]/80 leading-relaxed text-center">
+              Doctors and Patients are slowed down by scattered files, misplaced reports, and manual tagging & tracking.
+              This creates delays, stress, and incorrect understanding of an already difficult journey.
             </p>
           </div>
         </Reveal>

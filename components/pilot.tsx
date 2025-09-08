@@ -14,15 +14,13 @@ export default function Pilot() {
             {/* Show mockup above pointers for mobile */}
             
             <h2 className="text-xl md:text-4xl font-heading font-bold tracking-tight text-[#204060] ">
-              OncoVault Fixes This
+              The OncoVault Fixes This
             </h2>
             <div className="block md:hidden mb-6">
               <FixesMockup />
             </div>
             <p className="mt-4 text-sm md:text-lg text-[color:var(--dark)]/80 leading-relaxed">
-              We transform scattered medical files into a unified, chronological timeline,
-              <br className="hidden md:block" />
-              so patients and doctors can track every step with{" "}
+              We transform scattered medical data into a unified, chronological timeline, so patients and doctors can track every step with{" "}
               <span className="font-bold text-[#204060]">clarity</span> and{" "}
               <span className="font-bold text-[#204060]">confidence</span>.
             </p>
