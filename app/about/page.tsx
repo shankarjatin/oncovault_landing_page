@@ -63,7 +63,7 @@ We at <span className="font-semibold text-brand">The OncoVault</span> believe ca
  <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
 Having your medical data <span className="font-semibold text-brand">summarised & vaulted</span> is likely to improve oncology outcomes, empower better decisions and brings clarity when it’s needed the most.</p>
  <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
-Our mission is to transform complex cancer data into clear,<span className="font-semibold text-brand">actionable insights</span>  that guide patients and doctors toward better outcomes and a healthier tomorrow.</p>
+Our mission is to transform complex cancer data into clear <span className="font-semibold text-brand">actionable insights</span>  that guide patients and doctors toward better outcomes and a healthier tomorrow.</p>
       {/* </p>
        <p className="text-md md:text-lg sm:text-xl text-gray-700 mb-4 text-justify">
         Our mission is to transform medical data into <span className="font-semibold text-brand">actionable insights</span>, paving the way for a healthier future for generations to come.
